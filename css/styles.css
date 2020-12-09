@@ -5,11 +5,13 @@
 	--ff-attribution: "Montserrat", sans-serif;
 
 	/* Colors */
+	--black: #000000;
 	--white: #ffffff;
 	--dark-grey: #333333;
 	--grey: #4f4f4f;
 	--light-grey: #828282;
 	--input-color: #bdbdbd;
+	--input-background: #f2f2f2;
 	--button-color: #e0e0e0;
 	--blue-highlight: #2d9cdb;
 	--red-highlight: #eb5757;
@@ -53,4 +55,136 @@ img {
 	width: 100%;
 	display: block;
 	height: auto;
+}
+
+body {
+	font-family: var(--ff-main);
+	color: var(--grey);
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 2.4rem;
+	color: var(--dark-grey);
+	width: 90%;
+	line-height: 1.4;
+	margin-bottom: 0.6em;
+}
+
+h2 {
+	font-size: 2.4rem;
+	color: var(--dark-grey);
+	font-weight: 500;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.container--narrow {
+	width: 88%;
+	margin: 0 auto;
+}
+
+.navbar {
+	padding: 1em 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-name {
+	font-family: var(--ff-site-name);
+	font-weight: 800;
+	font-size: 2.4rem;
+	color: var(--dark-grey);
+}
+
+.navbar__desktops {
+	display: none;
+}
+
+.navbar__hamburger__item {
+	width: 18px;
+	height: 3px;
+	background-color: var(--black);
+	margin-bottom: 0.2em;
+}
+
+.navbar__hamburger__item:last-of-type {
+	margin-bottom: 0;
+}
+
+.site-header {
+	margin-top: 3em;
+}
+
+.site-header__text {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.site-header__text--highlight {
+	font-weight: 500;
+	color: var(--blue-highlight);
+	margin-bottom: 0.5em;
+}
+
+.site-header__image {
+	border-radius: 18px;
+	overflow: hidden;
+}
+
+.site-header__sub-heading {
+	width: 70%;
+	line-height: 1.4;
+	padding: 1em 0;
+}
+
+form {
+	margin-top: 2em;
+}
+
+.form-container {
+	position: relative;
+}
+
+.form-input {
+	background: var(--input-background);
+	border: none;
+	border-radius: 12px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	padding: 1em 1.5em;
+	color: var(--input-color);
+	width: 100%;
+}
+
+.form-input__label {
+	display: block;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--light-grey);
+	margin-bottom: 1em;
+}
+
+.btn--absolute {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: var(--blue-highlight);
+	border-radius: 12px;
+	border: none;
+	color: var(--white);
+	font-weight: 500;
+	font-size: 1.4rem;
+	padding: 0.6em 1.5em;
+}
+
+.services {
+	margin-top: 7em;
 }

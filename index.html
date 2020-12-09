@@ -45,23 +45,33 @@
             </div>
         </nav>
 
-        <header>
-            <p>Unhappy with your website?</p>
-            <h1>We create beautiful and fast web services</h1>
-            <figure>
+        <header class="site-header">
+
+            <div class="container--narrow">
+                <p class="site-header__text  site-header__text--highlight">Unhappy with your website?</p>
+                <h1>We create beautiful and fast web services</h1>
+            </div>
+
+            <figure class="site-header__image">
                 <img src="./images/heroImage.jpg" alt="A picture showing a team of people discussing about a project">
             </figure>
 
-            <h2>Story, emotion and purpose</h2>
-            <p>We help transform your ideas into real world applications that will outperform your toughest competition
-                and help you achieve your strategic goals in short period of time.</p>
+            <div class="container--narrow">
+                <h2 class="site-header__sub-heading">Story, emotion and purpose</h2>
+                <p class="site-header__text">We help transform your ideas into real world applications that will
+                    outperform
+                    your toughest competition
+                    and help you achieve your strategic goals in short period of time.</p>
 
 
-            <form action="#">
-                <label for="email">Want us to contact you?</label>
-                <input type="email" name="email" id="email">
-                <button type="submit">Join</button>
-            </form>
+                <form action="#">
+                    <label for="email" class="form-input__label">Want us to contact you?</label>
+                    <div class="form-container">
+                        <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
+                        <button type="submit" class="btn  btn--absolute">Join</button>
+                    </div>
+                </form>
+            </div>
         </header>
 
         <main>
