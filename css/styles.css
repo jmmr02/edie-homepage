@@ -1,3 +1,23 @@
+:root {
+	/* Font families */
+	--ff-site-name: "Heebo", sans-serif;
+	--ff-main: "Poppins", sans-serif;
+	--ff-attribution: "Montserrat", sans-serif;
+
+	/* Colors */
+	--white: #ffffff;
+	--dark-grey: #333333;
+	--grey: #4f4f4f;
+	--light-grey: #828282;
+	--input-color: #bdbdbd;
+	--button-color: #e0e0e0;
+	--blue-highlight: #2d9cdb;
+	--red-highlight: #eb5757;
+	--green-highlight: #27ae60;
+	--attribution: #a9a9a9;
+	--footer-background: #100e1d;
+}
+
 *,
 *::before,
 *::after {
