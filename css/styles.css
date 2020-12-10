@@ -18,6 +18,9 @@
 	--green-highlight: #27ae60;
 	--attribution: #a9a9a9;
 	--footer-background: #100e1d;
+
+	/* Box-shadow */
+	--card-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
 }
 
 *,
@@ -60,7 +63,6 @@ img {
 body {
 	font-family: var(--ff-main);
 	color: var(--grey);
-	font-size: 1.6rem;
 	font-weight: 400;
 }
 
@@ -77,6 +79,7 @@ h2 {
 	font-size: 2.4rem;
 	color: var(--dark-grey);
 	font-weight: 500;
+	line-height: 1.4;
 }
 
 .container {
@@ -85,7 +88,7 @@ h2 {
 }
 
 .container--narrow {
-	width: 88%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -140,7 +143,7 @@ h2 {
 
 .site-header__sub-heading {
 	width: 70%;
-	line-height: 1.4;
+
 	padding: 1em 0;
 }
 
@@ -171,20 +174,84 @@ form {
 	margin-bottom: 1em;
 }
 
-.btn--absolute {
+.btn {
+	display: block;
+	background: var(--button-color);
+	border-radius: 12px;
+	border: none;
+	color: var(--light-grey);
+	font-weight: 500;
+	font-size: 1.4rem;
+	padding: 1em 1em;
+	cursor: pointer;
+}
+
+.btn--blue {
+	background: var(--blue-highlight);
+	color: var(--white);
+}
+
+.btn--form {
 	position: absolute;
 	right: 5px;
 	top: 50%;
 	transform: translateY(-50%);
-	background: var(--blue-highlight);
-	border-radius: 12px;
-	border: none;
-	color: var(--white);
-	font-weight: 500;
-	font-size: 1.4rem;
 	padding: 0.6em 1.5em;
 }
 
 .services {
-	margin-top: 7em;
+	margin-top: 10.2em;
+}
+
+.services__sub-heading {
+	width: 80%;
+	margin-bottom: 2em;
+}
+
+.card {
+	padding: 5em 3.4em;
+	margin-bottom: 8.6em;
+	border-radius: 24px;
+	max-width: 340px;
+}
+
+.card--featured {
+	box-shadow: var(--card-shadow);
+}
+
+.card__title {
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: var(--dark-grey);
+	margin-bottom: 1em;
+}
+
+.card__description {
+	font-size: 1.6rem;
+	padding-bottom: 2em;
+	line-height: 1.5;
+}
+
+.icon {
+	width: 67px;
+	height: 67px;
+	background: var(--blue-highlight);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 16px;
+	margin-bottom: 3.5em;
+}
+
+.icon--green {
+	background: var(--green-highlight);
+}
+
+.icon--red {
+	background: var(--red-highlight);
+}
+
+.material-icons {
+	color: var(--white);
+	font-size: 3.6rem;
 }

@@ -7,6 +7,9 @@
     <meta name="description" content="A homepage for a company that provides web services">
     <title>Edie Homepage</title>
 
+    <!-- Google Material Design Icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap" rel="stylesheet">
@@ -68,7 +71,7 @@
                     <label for="email" class="form-input__label">Want us to contact you?</label>
                     <div class="form-container">
                         <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
-                        <button type="submit" class="btn  btn--absolute">Join</button>
+                        <button type="submit" class="btn  btn--blue  btn--form">Join</button>
                     </div>
                 </form>
             </div>
@@ -78,37 +81,58 @@
 
             <!-- Start of services section -->
             <section class="services">
-                <h2>We offer high demand services</h2>
+
+                <!-- Start of container--narrow -->
+                <div class="container--narrow">
+                    <h2 class="services__sub-heading">We offer high demand services</h2>
+                </div>
+                <!-- End of container--narrow -->
 
                 <div class="card">
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <span class="material-icons">
+                            create
+                        </span>
+                    </div>
 
                     <h3 class="card__title">UI/UX Design</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                        metus
                         ac nulla consequat aliquet id quis turpis.</p>
 
                     <button class="btn">Get Started</button>
                 </div>
 
-                <div class="card">
-                    <div class="icon"></div>
+                <div class="card  card--featured">
+                    <div class="icon  icon--green">
+                        <span class="material-icons">
+                            code
+                        </span>
+                    </div>
 
                     <h3 class="card__title">Frontend</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                        metus
                         ac nulla consequat aliquet id quis turpis.</p>
 
-                    <button class="btn">Get Started</button>
+                    <button class="btn  btn--blue">Get Started</button>
                 </div>
 
                 <div class="card">
-                    <div class="icon"></div>
+                    <div class="icon  icon--red">
+                        <span class="material-icons">
+                            storage
+                        </span>
+                    </div>
 
                     <h3 class="card__title">Backend</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                        metus
                         ac nulla consequat aliquet id quis turpis.</p>
 
                     <button class="btn">Get Started</button>
                 </div>
+
             </section>
             <!-- End of services section -->
 
