@@ -110,6 +110,12 @@ section {
 	color: var(--dark-grey);
 }
 
+.site-name--large {
+	font-size: 3.6rem;
+	color: var(--white);
+	padding-top: 2em;
+}
+
 .navbar__desktops {
 	display: none;
 }
@@ -375,4 +381,52 @@ form {
 	font-size: 1.8rem;
 	font-weight: 500;
 	color: var(--light-grey);
+}
+
+footer {
+	background: var(--footer-background);
+	color: var(--white);
+	padding-bottom: 20em;
+	position: relative;
+}
+
+.footer-nav {
+	padding-top: 3.6em;
+}
+
+.footer-nav__items {
+	list-style: none;
+	font-size: 1.8rem;
+	margin-bottom: 1em;
+}
+
+.social-media {
+	display: flex;
+	padding: 1em 0 6.5em;
+	align-items: center;
+}
+
+.social-media-icons {
+	width: 24px;
+	height: 24px;
+	margin-right: 1em;
+}
+
+.attribution {
+	position: absolute;
+	bottom: 20px;
+	left: 45%;
+	transform: translateX(-45%);
+	font-weight: 600;
+	font-size: 1.4rem;
+	color: var(--attribution);
+}
+
+.attribution,
+.attribution-link,
+.attribution-link:focus,
+.attribution-link:active,
+.attribution-link:visited {
+	text-decoration: none;
+	color: var(--attribution);
 }

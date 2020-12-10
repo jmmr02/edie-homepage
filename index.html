@@ -231,7 +231,12 @@
             <!-- End of testimonials section -->
         </main>
 
-        <footer>
+    </div>
+    <!-- End of container -->
+
+    <footer>
+
+        <div class="container--narrow">
             <nav class="footer-nav">
                 <ul>
                     <li class="footer-nav__items">Home</li>
@@ -242,30 +247,36 @@
                 </ul>
             </nav>
 
-            <p class="site-name">Edie</p>
+            <p class="site-name  site-name--large">Edie</p>
 
             <div class="social-media">
-                <img src="./images/instagram.svg" alt="">
-                <img src="./images/linkedin.svg" alt="">
-                <img src="./images/twitter.svg" alt="">
+                <img src="./images/instagram.svg" alt="" class="social-media-icons">
+                <img src="./images/linkedin.svg" alt="" class="social-media-icons">
+                <img src="./images/twitter.svg" alt="" class="social-media-icons">
             </div>
 
-            <form action="#">
+            <!-- <form action="#">
                 <label for="email">Want us to contact you?</label>
                 <input type="email" name="email" id="email">
                 <button type="submit">Join</button>
+            </form> -->
+
+            <form action="#">
+                <label for="email" class="form-input__label">Want us to contact you?</label>
+                <div class="form-container">
+                    <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
+                    <button type="submit" class="btn  btn--blue  btn--form">Join</button>
+                </div>
             </form>
 
             <p class="attribution">
-                jmmr02
+                jmmr02@
                 <a href="https://devchallenges.io" target="_blank" rel="noopener noreferrer"
                     class="attribution-link">Devchallenges.io
                 </a>
             </p>
-        </footer>
-
-    </div>
-    <!-- End of container -->
+        </div>
+    </footer>
 </body>
 
 </html>
