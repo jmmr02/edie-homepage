@@ -199,6 +199,13 @@ form {
 	padding: 0.6em 1.5em;
 }
 
+.btn--transparent {
+	background: var(--white);
+	color: var(--blue-highlight);
+	font-size: 1.8rem;
+	padding: 0;
+}
+
 .services {
 	margin-top: 10.2em;
 }
@@ -254,4 +261,36 @@ form {
 .material-icons {
 	color: var(--white);
 	font-size: 3.6rem;
+}
+
+.project {
+	margin-bottom: 5em;
+}
+
+.project__sub-heading {
+	margin-bottom: 2em;
+}
+
+.project__image-wrapper {
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.project__type {
+	font-size: 1.2rem;
+	font-weight: 300;
+	padding: 1em 0 0.5em;
+	color: var(--light-grey);
+}
+
+.project__name {
+	font-weight: 500;
+	font-size: 1.8rem;
+	color: var(--dark-grey);
+}
+
+.arrow {
+	display: inline-block;
+	padding-left: 0.5em;
+	font-weight: 500;
 }
